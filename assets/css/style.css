@@ -1,0 +1,36 @@
+:root {
+  --warna-utama: #6a2de6;
+  --warna-utama-gelap: #5321bd;
+  --warna-bg: #f7f7fb;
+  --warna-putih: #ffffff;
+  --warna-hitam: #121212;
+  --warna-hijau: #1faa6f;
+  --warna-merah: #e74c3c;
+}
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--warna-bg); color: #1e1e1e; }
+.bg-auth { background: linear-gradient(135deg, #f6f0ff, #ffffff); min-height: 100vh; }
+.card-modern { border: none; border-radius: 16px; box-shadow: 0 8px 28px rgba(18, 18, 18, .08); }
+.text-utama { color: var(--warna-utama); }
+.btn-utama { background: var(--warna-utama); color: #fff; border: none; }
+.btn-utama:hover { background: var(--warna-utama-gelap); color: #fff; }
+.layout-wrap { display: flex; min-height: 100vh; }
+.sidebar { width: 250px; background: #111; color: #fff; padding: 20px 15px; position: fixed; top: 0; left: 0; bottom: 0; overflow-y: auto; }
+.sidebar .brand { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff; }
+.sidebar .menu-link { display: block; padding: 10px 12px; margin-bottom: 8px; color: #ddd; text-decoration: none; border-radius: 10px; }
+.sidebar .menu-link:hover, .sidebar .menu-link.active { background: var(--warna-utama); color: #fff; }
+.main-content { margin-left: 250px; width: calc(100% - 250px); }
+.topbar { background: #fff; padding: 14px 20px; box-shadow: 0 2px 10px rgba(0,0,0,.06); position: sticky; top: 0; z-index: 5; }
+.content-area { padding: 20px; }
+.kartu-ringkas { border-left: 5px solid var(--warna-utama); }
+.nilai-hijau { color: var(--warna-hijau); font-weight: 700; }
+.nilai-merah { color: var(--warna-merah); font-weight: 700; }
+.progress { height: 12px; border-radius: 10px; }
+.progress-bar { background: var(--warna-utama); }
+.table thead th { background: #f5f3fc; }
+.chat-box { max-height: 320px; overflow-y: auto; border: 1px solid #eee; border-radius: 12px; padding: 12px; background: #fafafa; }
+.bubble-user { background: #efe6ff; border-radius: 12px; padding: 8px 12px; margin-bottom: 8px; }
+.bubble-ai { background: #fff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 8px 12px; margin-bottom: 8px; }
+@media (max-width: 991px) {
+  .sidebar { position: static; width: 100%; }
+  .main-content { margin-left: 0; width: 100%; }
+}
