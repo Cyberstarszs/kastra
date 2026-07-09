@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<FilesMatch "^\.env(.*)|(app\.php|koneksi\.php|database\.php|pakasir\.php)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|log|ini|zip|tar\.gz)$">
+  Require all denied
+</FilesMatch>

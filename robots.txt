@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Halaman privat
+Disallow: /admin/
+Disallow: /user/
+Disallow: /config/
+Disallow: /api/
+
+Sitemap: https://kastra.web.id/sitemap.xml
